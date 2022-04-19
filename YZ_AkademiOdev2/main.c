@@ -93,14 +93,14 @@ void saat(int n) {
 
 int main(void) {
   int h, m;
-  printf("Saat giriþi yapýnýz: ", h);
+  printf("Enter the time: ", h);
   scanf("%d", &h);
   if (1 <= h && h <= 24) {
     if (h >= 13) {
       h = h - 12;
       printf("h: %d ", h);
     }
-    printf("Dakika giriþi yapýnýz: ", m);
+    printf("Enter the minute: ", m);
     scanf("%d", &m);
     if (1 <= m && m <= 59) {
       if (m == 0) {
@@ -141,10 +141,10 @@ int main(void) {
         }
       }
     } else {
-      printf("Lütfen geçerli bir giriþ yapýn!");
+      printf("Please enter a valid login!");
     }
   } else {
-    printf("Lütfen geçerli bir giriþ yapýn!");
+    printf("Please enter a valid login!");
   }
   return 0;
 }
